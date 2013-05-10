@@ -6,6 +6,9 @@ testObject.get = function() {
 testObject.save = function() {
 };
 
+testObject.create = function() {
+};
+
 testObject.query = function() {
 };
 

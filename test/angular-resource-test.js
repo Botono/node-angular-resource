@@ -23,6 +23,9 @@ describe('angular-resource', function() {
 			it('should bind save', function() {
 				assert(app.post.calledWith('/api/testObject/:id', testObject.save));
 			});
+            it('should bind create', function() {
+                assert(app.post.calledWith('/api/testObject', testObject.create));
+            });
 			it('should bind query', function() {
 				assert(app.get.calledWith('/api/testObject', testObject.query));
 			});
@@ -43,6 +46,9 @@ describe('angular-resource', function() {
 			it('should bind save', function() {
 				assert(app.post.calledWith('/api/testObject/:id', middleware, testObject.save));
 			});
+            it('should bind create', function() {
+                assert(app.post.calledWith('/api/testObject', middleware, testObject.create));
+            });
 			it('should bind query', function() {
 				assert(app.get.calledWith('/api/testObject', middleware, testObject.query));
 			});

@@ -8,6 +8,10 @@ task.save = function(req, res) {
 	res.send(200);
 };
 
+task.create = function(req, res) {
+    res.send(200);
+};
+
 task.query = function(req, res) {
 	res.json([]);
 };
